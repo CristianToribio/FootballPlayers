@@ -1,0 +1,9 @@
+{
+    "jugadores": [
+      { "id": 1, "nombre": "Sergio", "apellido": "Ramos", "posicion": "Defensa", "equipo": "Real Madrid" },
+      { "id": 2, "nombre": "Rafael", "apellido": "Varane", "posicion": "Defensa", "equipo": "Real Madrid" },
+      { "id": 3, "nombre": "Lucas", "apellido": "Vazquez", "posicion": "Extremo", "equipo": "Real Madrid" },
+      { "id": 4, "nombre": "Karim", "apellido": "Benzema", "posicion": "Delantero", "equipo": "Real Madrid" }
+    ],
+    "presidente": { "name": "Frorentino" }
+  }
