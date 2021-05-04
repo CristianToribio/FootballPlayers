@@ -86,4 +86,4 @@ function sub21Players(data = []) {
 
 }
 
-const players = generatePlayers(30);
+const players = generatePlayers(20);
