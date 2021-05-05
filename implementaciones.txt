@@ -1,0 +1,3 @@
+hacer la paginacion : https://material-ui.com/components/tables/#table
+cuando pinches en uno que te muestre los datos en otra ventana
+cambiar el texto del toolbar en funcion de la tabla seleccionada

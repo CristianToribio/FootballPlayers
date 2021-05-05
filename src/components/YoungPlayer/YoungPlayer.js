@@ -9,7 +9,7 @@ import TableBody from '@material-ui/core/TableBody';
 import TableRow from '@material-ui/core/TableRow';
 import Container from '@material-ui/core/Container';
 
-function YoungPlayers() {
+export function YoungPlayers() {
     const [data, setData] = React.useState([]);
 
     const fetchData = async () => {
@@ -51,5 +51,3 @@ function YoungPlayers() {
         </React.Fragment>
     );
 }
-
-export default YoungPlayers;

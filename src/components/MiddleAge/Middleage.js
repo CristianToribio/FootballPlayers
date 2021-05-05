@@ -10,8 +10,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Container from '@material-ui/core/Container';
 
 
-
-function Middleage() {
+export function Middleage() {
     const [data, setData] = React.useState([]);
 
     const fetchData = async () => {
@@ -45,5 +44,3 @@ function Middleage() {
         </React.Fragment>
     );
 }
-
-export default Middleage;

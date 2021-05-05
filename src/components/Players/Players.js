@@ -9,7 +9,6 @@ import TableBody from '@material-ui/core/TableBody';
 import TableRow from '@material-ui/core/TableRow';
 import Container from '@material-ui/core/Container';
 
-
 export function Players() {
     const [data, setData] = React.useState([]);
 

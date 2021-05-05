@@ -9,7 +9,7 @@ import TableBody from '@material-ui/core/TableBody';
 import TableRow from '@material-ui/core/TableRow';
 import Container from '@material-ui/core/Container';
 
-function Sub21() {
+export function Sub21() {
     const [data, setData] = React.useState([]);
 
     const fetchData = async () => {
@@ -57,5 +57,3 @@ function Sub21() {
         </React.Fragment>
     );
 }
-
-export default Sub21;
