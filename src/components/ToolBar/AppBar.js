@@ -25,8 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-  },
-  m: '0 30px',
+  }
 }));
 
 export function ElevateAppBar(props) {
