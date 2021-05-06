@@ -1,13 +1,4 @@
 import React from 'react';
-import 'fontsource-roboto';
-import TableContainer from '@material-ui/core/TableContainer';
-import Paper from '@material-ui/core/Paper';
-import Table from '@material-ui/core/Table';
-import TableHead from '@material-ui/core/TableHead';
-import TableCell from '@material-ui/core/TableCell';
-import TableBody from '@material-ui/core/TableBody';
-import TableRow from '@material-ui/core/TableRow';
-import Container from '@material-ui/core/Container';
 import { DataGrid } from '@material-ui/data-grid';
 
 export function Players() {
@@ -41,8 +32,6 @@ export function Players() {
     };
 
     let arrayfilas = filas();
-
-
 
     return (
         <div style={{ height: 600, width: '100%' }}>

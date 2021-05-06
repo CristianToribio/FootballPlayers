@@ -1,3 +1,6 @@
 hacer la paginacion : https://material-ui.com/components/tables/#table
+de las dos tablas:
+	//players datagrid
+	sub21    la otra forma
 cuando pinches en uno que te muestre los datos en otra ventana
-cambiar el texto del toolbar en funcion de la tabla seleccionada
+// cambiar el texto del toolbar en funcion de la tabla seleccionada

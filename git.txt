@@ -1,0 +1,11 @@
+git status para ver los cambios
+git add . para añadir los ficheros
+git commit -m "" para subir el commit
+git push -u origin main para pusear el commit 
+
+funcion que retorna otra funcion ejemplos de players abajo del todo
+
+function App() {
+  return <Players />;
+
+}

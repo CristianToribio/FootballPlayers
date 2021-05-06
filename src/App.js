@@ -5,7 +5,6 @@ import { OldPlayers } from './components/OldPlayer/OldPlayer';
 import { YoungPlayers } from './components/YoungPlayer/YoungPlayer';
 import { Sub21 } from './components/Sub21/Sub21';
 import { Middleage } from './components/MiddleAge/Middleage';
-import { Pagi } from './components/Pagination/Pagination';
 
 function App() {
   // ESTADO: vista actual (players, sub21,...)
