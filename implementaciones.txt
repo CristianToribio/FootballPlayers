@@ -3,4 +3,7 @@ de las dos tablas:
 	//players datagrid
 	sub21    la otra forma
 cuando pinches en uno que te muestre los datos en otra ventana
+	se hace con el dialog :  https://material-ui.com/components/dialogs/#dialog
 // cambiar el texto del toolbar en funcion de la tabla seleccionada
+
+hacer las solicitudes cuando fran acabe
