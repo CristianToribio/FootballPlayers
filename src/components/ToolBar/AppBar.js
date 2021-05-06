@@ -9,10 +9,10 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 
 const options = [
-  'Players',
-  'OldPlayer',
-  'YoungPlayer',
-  'MiddleAge',
+  'Jugadores',
+  'Jugador Más Veterano',
+  'Jugador Más Joven',
+  'Edad Media',
   'Sub21',
 ];
 
@@ -26,7 +26,6 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
-  m: '0 30px',
 }));
 
 export function ElevateAppBar(props) {
@@ -45,24 +44,32 @@ export function ElevateAppBar(props) {
     setAnchorEl(null);
   };
 
+  //actualiza la url a la misma url
   const actualizar = () => {
-    //actualiza la url a la misma url
     window.location.href = window.location.href;
   };
 
   const handleMenuItemClick = (event, index) => {
     setSelectedIndex(index);
-    onChange(index)
+    onChange(index);
     setAnchorEl(null);
+    cambiarTitulo(index);
   };
 
+  //cambia el titulo segun la tabla que se muestra
+  function cambiarTitulo(index) {
+    document.getElementById('titulo').innerHTML = options[index];
+  };
+
+
+  //para hacer que baje quitar la opcion de position sticky
   return (
     <div className={classes.root}>
-      <AppBar>
+      <AppBar position="sticky"> 
         <Toolbar>
           <Typography variant="h6" className={classes.title} align="center">
-            Futbolistas
-            </Typography>
+            <h5 id="titulo">Jugadores</h5>
+          </Typography>
           <div>
             <IconButton
               aria-label="menu"

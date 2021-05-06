@@ -26,7 +26,6 @@ export function YoungPlayers() {
     return (
         <React.Fragment>
             <Container maxWidth="md">
-                <p><b>El Jugador Mas Joven de la tabla de los jugadores</b></p>
                 <TableContainer component={Paper}>
                     <Table aria-label="simple table">
                         <TableHead>
@@ -36,6 +35,7 @@ export function YoungPlayers() {
                                 <TableCell align="center"><u><b>Apellido</b></u></TableCell>
                                 <TableCell align="center"><u><b>Equipo</b></u></TableCell>
                                 <TableCell align="center"><u><b>Edad</b></u></TableCell>
+                                <TableCell align="left"><u><b>Wikipedia</b></u></TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
@@ -44,6 +44,7 @@ export function YoungPlayers() {
                             <TableCell align="center">{data.apellido}</TableCell>
                             <TableCell align="center">{data.equipo}</TableCell>
                             <TableCell align="center">{data.edad}</TableCell>
+                            <TableCell align="left" ><a href={data.url}>{data.url}</a></TableCell>
                         </TableBody>
                     </Table>
                 </TableContainer>

@@ -33,9 +33,8 @@ function App() {
       <ElevateAppBar onChange={(value) => {
         // establecer view, como el value pasado
         setView(value);
-      }} /><br />
-      {getCurrentView()}
-      <Pagi />
+      }} /> <br />
+      { getCurrentView()}
     </>
   );
 

@@ -27,7 +27,6 @@ export function Middleage() {
     return (
         <React.Fragment>
             <Container maxWidth="md">
-                <p><b>La media de la edad de los Jugadores de la tabla</b></p>
                 <TableContainer component={Paper}>
                     <Table aria-label="simple table">
                         <TableHead>
@@ -36,7 +35,7 @@ export function Middleage() {
                             </TableRow>
                         </TableHead>
                         <TableBody>
-                            <TableCell align="center">{data.edad}</TableCell>
+                            <TableCell align="center">{data.edad} Años</TableCell>
                         </TableBody>
                     </Table>
                 </TableContainer>

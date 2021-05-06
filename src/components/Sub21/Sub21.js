@@ -8,6 +8,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableBody from '@material-ui/core/TableBody';
 import TableRow from '@material-ui/core/TableRow';
 import Container from '@material-ui/core/Container';
+import { DataGrid } from '@material-ui/data-grid';
 
 export function Sub21() {
     const [data, setData] = React.useState([]);
@@ -22,38 +23,28 @@ export function Sub21() {
         fetchData();
     }, []);
 
+    const columna = [
+        { field: 'id', headerName: 'Identificador', description: 'Id del Jugador.', width: 150 },
+        { field: 'nombre', headerName: 'Nombre', description: 'Nombre del Jugador.', width: 150 },
+        { field: 'apellido', headerName: 'Apellido', description: 'Apellido del Jugador.', width: 150 },
+        { field: 'equipo', headerName: 'Equipo', description: 'Equipo del Jugador.', width: 250, },
+        { field: 'edad', headerName: 'Edad', description: 'Edad del Jugador.', width: 200, },
+        { field: 'url', headerName: 'Wikipedia', description: 'Wikipedia del Jugador.', width: 400, },
+    ];
+
+    const filas = () => {
+        let array = [];
+        for (let i = 0; i < data.length; i++) {
+            array.push({ id: data[i].id, nombre: data[i].nombre, apellido: data[i].apellido, equipo: data[i].equipo, edad: data[i].edad, url: data[i].url })
+        }
+        return array
+    };
+
+    let arrayfilas = filas();
 
     return (
-        <React.Fragment>
-            <Container maxWidth="md">
-                <p><b>Los Jugadores Sub21:</b></p>
-                <TableContainer component={Paper}>
-                    <Table aria-label="simple table">
-                        <TableHead>
-                            <TableRow>
-                                <TableCell><u><b>ID</b></u></TableCell>
-                                <TableCell align="center"><u><b>Nombre</b></u></TableCell>
-                                <TableCell align="center"><u><b>Apellido</b></u></TableCell>
-                                <TableCell align="center"><u><b>Equipo</b></u></TableCell>
-                                <TableCell align="center"><u><b>Edad</b></u></TableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {data.map((row) => (
-                                <TableRow key={row.id}>
-                                    <TableCell component="th" scope="row">
-                                        {row.id}
-                                    </TableCell>
-                                    <TableCell align="center">{row.nombre}</TableCell>
-                                    <TableCell align="center">{row.apellido}</TableCell>
-                                    <TableCell align="center">{row.equipo}</TableCell>
-                                    <TableCell align="center">{row.edad}</TableCell>
-                                </TableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
-                </TableContainer>
-            </Container>
-        </React.Fragment>
+        <div style={{ height: 600, width: '100%' }}>
+            <DataGrid rows={arrayfilas} columns={columna} pageSize={25} checkboxSelection />
+        </div>
     );
 }
