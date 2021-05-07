@@ -162,9 +162,6 @@ export function Sub21() {
         fetchData();
     }, []);
 
-    function createData(name, calories, fat, carbs, protein) {
-        return { name, calories, fat, carbs, protein };
-    }
 
     const rows = () => {
         let array = [];
@@ -231,7 +228,7 @@ export function Sub21() {
                         <EnhancedTableHead
                             classes={classes}
                             numSelected={selected.length}
-                            rowCount={rows.length}
+                            rowCount={arrayfilas.length}
                         />
                         <TableBody>
                             {arrayfilas.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row, index) => {
@@ -270,7 +267,7 @@ export function Sub21() {
                 <TablePagination
                     rowsPerPageOptions={[5, 25, 50, 100]}
                     component="div"
-                    count={rows.length}
+                    count={arrayfilas.length}
                     rowsPerPage={rowsPerPage}
                     page={page}
                     onChangePage={handleChangePage}
